@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Printing & Design Services</title>
+    <style>
+        /* body { font-family: Arial, sans-serif; margin: 0; padding: 0; } */
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* scroll-behavior: smooth; */
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* .services { display: flex; flex-wrap: wrap; justify-content: center; }
+        .service { width: 300px; margin: 15px; padding: 15px; border: 1px solid #ddd; text-align: center; } */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .service {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?printing,design');
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #cc5500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MARIYAM DIGIPRINT</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section class="hero">
+        <h1>High-Quality Printing & Design Services</h1>
+        <p>Get professional printing, business cards, banners, LED boards, and more!</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Xerox & Printing</h3>
+                <p>B/W & Color</p>
+            </div>
+            <div class="service">
+                <h3>Lamination</h3>
+                <p>Protect your documents</p>
+            </div>
+            <div class="service">
+                <h3>Smart Card Printing</h3>
+                <p>Custom ID & Access Cards</p>
+            </div>
+            <div class="service">
+                <h3>Business Card Design</h3>
+                <p>High-quality business cards</p>
+            </div>
+            <div class="service">
+                <h3>Banner Printing</h3>
+                <p>Custom banners for events</p>
+            </div>
+            <div class="service">
+                <h3>LED Display Boards</h3>
+                <p>Fully customized LED signs</p>
+            </div>
+            <div class="service">
+                <h3>Vinyl Printing</h3>
+                <p>Custom vinyl design & prints</p>
+            </div>
+            <div class="service">
+                <h3>Bulk Printing</h3>
+                <p>Large quantity printing</p>
+            </div>
+            <div class="service">
+                <h3>Typing Jobs</h3>
+                <p>Document formatting & editing</p>
+            </div>
+            <div class="service">
+                <h3>Website Design</h3>
+                <p>Make your business online</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Showcase of our recent works</p>
+        <!-- Add images here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Opp. Fatehwadi Tower, Fatehwadi, Sarkhej Vishala road, Ahmedabad</p>
+        <p>Phone: +91 9723959695</p>
+        <p>Email: mariyam.digiprint@gmail.com</p>
+        <p><a href="https://wa.me/9723959695">Chat on WhatsApp</a></p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide high-quality printing, design, and custom display solutions to businesses and individuals.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Printing Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
